@@ -1,0 +1,11 @@
+public class regx89 {
+    public static void main(String[] args) {
+        //string
+        String arr[] = {"aaa", "abcd", "manana"};
+        for (String res : arr) {
+            if (res.matches("[a-z]{4}") == true) {
+                System.out.println(res);
+            }
+        }
+    }
+}
