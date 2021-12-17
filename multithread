@@ -1,0 +1,16 @@
+package demotest;
+public class MulThread1 implements Runnable
+{
+       public static void main(String[] args) {
+        Thread MulThread1 = new Thread("Mul1");
+        Thread MulThread2 = new Thread(" Mul2");
+        MulThread1.start();
+        MulThread2.start();
+        System.out.println("Thread names are following:");
+        System.out.println(MulThread1.getName());
+        System.out.println(MulThread2.getName());
+    }
+    @Override
+    public void run() {
+    }
+}
